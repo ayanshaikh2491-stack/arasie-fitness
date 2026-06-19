@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: arasie-fitness
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node server.js
+    envVars:
+      - key: VITE_SUPABASE_URL
+        value: your-supabase-url
+      - key: VITE_SUPABASE_ANON_KEY
+        value: your-supabase-anon-key

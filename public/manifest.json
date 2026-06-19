@@ -1,0 +1,49 @@
+{
+  "name": "Araise - Fitness & Wellness",
+  "short_name": "Araise",
+  "description": "Professional fitness and wellness tracking app with AI-powered workouts, water intake monitoring, and diet planning",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "orientation": "portrait-primary",
+  "categories": ["health", "fitness", "lifestyle"],
+  "icons": [
+    {
+      "src": "/araise-logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "View your fitness overview",
+      "url": "/dashboard",
+      "icons": [{ "src": "/araise-logo.png", "sizes": "any" }]
+    },
+    {
+      "name": "Workout",
+      "short_name": "Workout",
+      "description": "Start a workout session",
+      "url": "/workout",
+      "icons": [{ "src": "/araise-logo.png", "sizes": "any" }]
+    },
+    {
+      "name": "Water Tracker",
+      "short_name": "Water",
+      "description": "Log water intake",
+      "url": "/water",
+      "icons": [{ "src": "/araise-logo.png", "sizes": "any" }]
+    },
+    {
+      "name": "Diet Tracker",
+      "short_name": "Diet",
+      "description": "Track your meals",
+      "url": "/diet",
+      "icons": [{ "src": "/araise-logo.png", "sizes": "any" }]
+    }
+  ]
+}
