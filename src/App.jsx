@@ -140,25 +140,22 @@ function AppContent() {
   }
 
   return (
-    <div className="flex min-h-screen bg-ar-black">
+    <div className="min-h-screen bg-ar-black">
       {/* Show navigation when authenticated, chat is not open, and navigation should not be hidden */}
       {isAuthenticated && !isChatOpen && !hideNavigation && <Navigation />}
 
       {/* Main content area with conditional spacing */}
-      <main className={`flex-1 ${
+      <main className={`${
         isAuthenticated && !isChatOpen && !hideNavigation 
-          ? 'md:ml-64 pb-24 md:pb-0 pt-20 md:pt-0 p-4 md:p-6 lg:p-8' 
-          : hideNavigation && isAuthenticated
-          ? 'min-h-screen w-full' // Full-screen for sub-sections with proper height
-          : ''
+          ? 'md:ml-64 pb-20 md:pb-0 pt-16 md:pt-4 px-4 md:px-6' 
+          : 'min-h-screen w-full'
       }`}>
         <div className={`${
           isAuthenticated && !isChatOpen && !hideNavigation 
-            ? 'max-w-7xl mx-auto' 
-            : hideNavigation && isAuthenticated
-            ? 'w-full h-full min-h-screen' // Full width and height for sub-sections
+            ? 'max-w-7xl mx-auto py-4' 
             : 'w-full'
         }`}>
+            <Routes>
             <Routes>
               {/* Public routes */}
               <Route path="/" element={
